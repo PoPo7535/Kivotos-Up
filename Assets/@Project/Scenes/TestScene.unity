@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 345763787}
   - component: {fileID: 345763789}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -620,6 +620,6 @@ SceneRoots:
   m_Roots:
   - {fileID: 519420032}
   - {fileID: 619394802}
-  - {fileID: 1721074546}
   - {fileID: 345763788}
+  - {fileID: 1721074546}
   - {fileID: 1293613804}
