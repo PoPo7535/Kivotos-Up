@@ -8,6 +8,7 @@ public class QuickStarter : SimulationBehaviour
 #if UNITY_EDITOR
     [SerializeField] private bool _quickStart = true;
     private NetworkRunner _networkRunner;
+    
     private void Start()
     {
         if (false == _quickStart)
@@ -19,7 +20,7 @@ public class QuickStarter : SimulationBehaviour
 
     private void StartGame()
     {
-        var sceneRef =  SceneRef.FromIndex(1);
+        var sceneRef =  SceneRef.FromIndex(SceneManager.GetActiveScene().buildIndex);
         var info = new NetworkSceneInfo();
         info.AddSceneRef(sceneRef, LoadSceneMode.Single);
         
